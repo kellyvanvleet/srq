@@ -24,7 +24,7 @@ nav{
 nav .name{display:none!important}nav .links{display:flex;gap:20px;margin-left:auto}nav a{text-decoration:none}
 
 .hero{
-  display:grid;grid-template-columns:minmax(0,1.18fr) minmax(300px,.82fr);
+  display:grid;grid-template-columns:minmax(0,1.35fr) 300px;
   gap:34px;align-items:start;padding:10px 0 6px
 }
 .hero-copy{padding-top:2px}
@@ -46,9 +46,9 @@ h1 em{display:block;color:var(--rust);font-style:italic}
   text-transform:uppercase;letter-spacing:.09em;font-size:11px;font-weight:800
 }
 .btn.primary{background:var(--ink);color:var(--paper)}
-.hero-photo{position:relative;margin:0}
+.hero-photo{position:relative;margin:0;justify-self:end;width:300px}
 .hero-photo img{
-  display:block;width:100%;height:355px;object-fit:cover;object-position:center 30%;
+  display:block;width:300px;height:375px;object-fit:cover;object-position:center 24%;
   border:1px solid var(--ink);filter:saturate(.9) contrast(1.02)
 }
 .hero-photo:before{content:"";position:absolute;z-index:-1;width:46%;height:29%;right:-16px;top:-16px;background:var(--teal)}
@@ -157,8 +157,8 @@ footer{padding:26px 0 30px;background:var(--olive);color:#fff}
   .lede{font-size:23px}
   .support{font-size:15px}
   .actions{margin-top:16px}
-  .hero-photo{width:100%;margin:0}
-  .hero-photo img{height:auto;aspect-ratio:4/5;object-position:center 30%}
+  .hero-photo{width:100%;margin:0;justify-self:stretch}
+  .hero-photo img{width:100%;height:auto;aspect-ratio:4/5;object-position:center 30%}
 
   section{padding:22px 0}#story{padding-top:14px}
   .section-head{grid-template-columns:1fr;gap:4px;margin-bottom:14px}
@@ -201,7 +201,6 @@ footer{padding:26px 0 30px;background:var(--olive);color:#fff}
 
 <header class="shell hero">
   <div class="hero-copy">
-    <div class="eyebrow">Healthcare IT &amp; Digital Health Leader</div>
     <h1>Kelly<em>Van Vleet.</em></h1>
     <p class="lede">I build products, teams and the structure around them.</p>
     <p class="support">I’m at my best when something is growing: developing the product, building the team and culture, and putting just enough structure in place to scale.</p>
