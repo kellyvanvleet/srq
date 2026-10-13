@@ -192,36 +192,53 @@ footer{padding:26px 0 30px;background:var(--olive);color:#fff}
   .footer-grid{align-items:start;flex-direction:column}
   .footer-links{text-align:left}
 }
+
+/* Approved AFTER homepage design */
+body{background:#f9f5ec}.editorial-shell{width:min(1160px,calc(100% - 72px));margin:0 auto}
+.editorial-nav{height:72px;border-bottom:1px solid #bdb7ab;display:flex;align-items:center;gap:30px;font-size:initial;letter-spacing:normal;text-transform:none;font-weight:normal}
+.editorial-nav .kvv-mark{width:106px;min-width:106px;height:56px;border-right:1px solid #c9bfae;display:flex;align-items:center;justify-content:flex-start}
+.kvv-mark svg{width:94px;height:75px;overflow:visible}
+.editorial-links{display:flex;align-items:center;gap:29px;flex:1}
+.editorial-links a{font:700 10px/1 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.14em;white-space:nowrap;text-decoration:none}
+.editorial-links .editorial-resume{margin-left:auto;background:#171714;color:#fff;padding:13px 17px}
+.editorial-links .editorial-linkedin{font:bold 17px/1 Arial,sans-serif;letter-spacing:0;text-transform:none;border:1px solid #171714;padding:1px 3px}
+.editorial-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:30px;align-items:center;padding:32px 0 32px;border-bottom:1px solid #bdb7ab;min-height:515px}
+.editorial-copy h1{font:400 clamp(70px,8.6vw,132px)/.8 Georgia,'Times New Roman',serif;letter-spacing:-.075em;margin:0 0 28px;white-space:nowrap}
+.editorial-copy h1 em{display:block;font-weight:400;color:#b74929;font-style:italic}
+.editorial-copy p{font:400 clamp(18px,1.8vw,23px)/1.3 Georgia,'Times New Roman',serif;max-width:460px;margin:0 0 24px}
+.editorial-actions{display:flex;flex-wrap:wrap;gap:12px}
+.ed-button{border:1px solid #171714;padding:15px 19px;display:inline-flex;align-items:center;text-decoration:none;color:#171714;font:bold 10px/1 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}.ed-dark{background:#171714;color:white}
+.editorial-collage{position:relative;height:445px;min-width:0;isolation:isolate}
+.editorial-sun{position:absolute;right:8%;top:21px;background:#e2b23c;width:235px;aspect-ratio:1;border-radius:50%;z-index:-1}
+.editorial-portrait{position:absolute;left:9%;top:22px;width:70%;height:398px;object-fit:cover;object-position:center 42%}
+.editorial-tape{position:absolute;top:18px;left:5%;width:85px;height:33px;background:#d5c2a0bb;transform:rotate(-22deg);clip-path:polygon(1% 4%,99% 0,96% 100%,0 95%)}
+.editorial-scribble{position:absolute;right:0;top:88px;width:92px;height:140px;transform:rotate(-11deg)}.editorial-scribble text{font:bold 15px 'Comic Sans MS','Bradley Hand',cursive}
+.editorial-plant{position:absolute;right:7%;bottom:24px;width:105px;height:160px}
+.editorial-postcard{position:absolute;right:-9px;bottom:9px;transform:rotate(10deg);width:143px;height:115px;background:linear-gradient(165deg,#e7e1d6 0%,#ded9cb 56%,#537b75 57%,#1a3b41 100%);border:8px solid white;box-shadow:0 5px 12px #0003}
+.editorial-postcard:after{content:"";position:absolute;bottom:36%;left:45%;height:43px;width:2px;background:#1c2923;transform:rotate(15deg);box-shadow:7px -3px 0 -0.5px #1c2923}
+.editorial-story{padding:27px 0 36px;border-bottom:1px solid #d0c7b7}
+.editorial-story-heading{display:grid;grid-template-columns:155px minmax(0,1fr) 94px;gap:20px;align-items:center}
+.editorial-story-number{font:400 43px/.92 Georgia,serif;color:#b74929}
+.editorial-story-number small{display:block;margin-top:9px;color:#171714;font:700 10px/1 Arial;letter-spacing:.17em}
+.editorial-story-heading h2{font:400 clamp(33px,3.8vw,48px)/1.06 Georgia,serif;letter-spacing:-.047em;margin:0}
+.editorial-side{font:700 10px/1.45 Arial;letter-spacing:.12em;color:#706c60}.editorial-side:after{content:"";display:block;width:36px;height:3px;background:#b74929;margin-top:10px}
+.editorial-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:35px}
+.editorial-feature{display:grid;grid-template-columns:54px 1fr;column-gap:17px;align-items:start;padding:0 30px 0 14px;border-right:1px solid #d0c7b7}
+.editorial-feature:first-child{padding-left:0}.editorial-feature:last-child{border-right:0;padding-right:0}
+.editorial-feature svg{width:44px;height:44px;color:#65714b;grid-row:span 2}
+.editorial-feature h3{font:700 11px/1 Arial;letter-spacing:.18em;text-transform:uppercase;margin:10px 0 0}
+.editorial-feature h3:after{content:"";display:block;width:29px;height:2px;background:#b74929;margin:12px 0}
+.editorial-feature p{font:13px/1.5 Arial,sans-serif;color:#46443d;grid-column:2;margin:0;max-width:245px}
+@media(max-width:900px){.editorial-shell{width:calc(100% - 40px)}.editorial-nav{gap:12px}.editorial-links{gap:15px}.editorial-hero{gap:13px;min-height:0}.editorial-copy h1{font-size:clamp(58px,8.6vw,90px)}.editorial-collage{height:380px}.editorial-portrait{height:355px}.editorial-sun{width:175px}.editorial-scribble{top:65px;width:75px}.editorial-plant{width:80px}.editorial-postcard{width:112px;height:91px}.editorial-story-heading{grid-template-columns:100px 1fr 78px}.editorial-feature{padding-right:13px;grid-template-columns:37px 1fr;gap:12px}.editorial-feature svg{width:35px}}
+@media(max-width:640px){.editorial-shell{width:calc(100% - 34px)}.editorial-nav{height:auto;min-height:66px;gap:9px;flex-wrap:wrap;padding:8px 0 10px}.editorial-nav .kvv-mark{width:66px;min-width:66px;height:42px}.kvv-mark svg{width:65px;height:60px}.editorial-links{gap:10px;justify-content:flex-end;flex-wrap:wrap}.editorial-links a{font-size:9px}.editorial-links a[href='#taste']{display:none}.editorial-links .editorial-resume{padding:9px 11px}.editorial-hero{grid-template-columns:1fr;gap:8px;padding:31px 0 20px}.editorial-copy h1{font-size:clamp(62px,13.8vw,97px);margin-bottom:23px}.editorial-copy p{font-size:19px;margin-bottom:20px}.ed-button{padding:13px 16px}.editorial-collage{height:355px;max-width:450px;width:100%;margin:auto}.editorial-portrait{left:15%;width:69%;height:336px;top:13px}.editorial-sun{right:9%;top:8px;width:195px}.editorial-tape{top:12px;left:12%}.editorial-scribble{right:1%;top:65px}.editorial-plant{right:8%;bottom:4px;width:82px}.editorial-postcard{right:4%;bottom:3px;width:109px;height:85px}.editorial-story{padding:24px 0}.editorial-story-heading{grid-template-columns:59px 1fr;gap:15px}.editorial-story-number{font-size:34px}.editorial-story-number small{font-size:8px}.editorial-story-heading h2{font-size:clamp(31px,7vw,42px)}.editorial-side{display:none}.editorial-three{grid-template-columns:1fr;gap:17px;margin-top:24px}.editorial-feature{grid-template-columns:43px 1fr;padding:0 0 17px!important;border-right:0;border-bottom:1px solid #d0c7b7}.editorial-feature:last-child{border-bottom:0;padding-bottom:0!important}.editorial-feature svg{width:37px}.editorial-feature h3{margin-top:3px}.editorial-feature h3:after{margin:9px 0}.editorial-feature p{max-width:none}}
+@media(max-width:390px){.editorial-links a[href='#work']{display:none}.editorial-links{gap:8px}.editorial-copy h1{font-size:66px}.editorial-collage{height:320px}.editorial-portrait{height:300px}}
 </style>
 </head>
 <body>
-<nav class="shell">
-  <div class="links"><a href="#story">Story</a><a href="#experience">Experience</a><a href="#work">How I work</a><a href="Kelly_Van_Vleet_Resume_KVV.docx">Resume</a></div>
-</nav>
-
-<header class="shell hero">
-  <div class="hero-copy">
-    <h1>Kelly<em>Van Vleet.</em></h1>
-    <p class="support">I’m at my best when something is growing, evolving or needs to work better.</p>
-    <div class="actions"><a class="btn primary" href="Kelly_Van_Vleet_Resume_KVV.docx">Resume</a><a class="btn" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/">LinkedIn</a></div>
-  </div>
-  <div class="hero-photo"><img src="assets/kelly-industrial.png" alt="Kelly Van Vleet"></div>
-</header>
-
-<section id="story">
-  <div class="shell">
-    <div class="section-head"><div class="kicker"><span>01</span>My story</div><h2>I care about the whole experience.</h2></div>
-    <div class="story-grid">
-      <div class="story-copy">
-        <p>I started in physical products and operations, learning how things get made, moved, costed and delivered.</p>
-        <p>I took that foundation into healthcare technology and digital health, where I built products, teams and the structure to scale them.</p>
-        <p><strong>I can walk the walk and talk the talk</strong> because I’ve built it, launched it, operated it and fixed it. I care about the details, have strong taste, and believe serious work can still be fun.</p>
-      </div>
-      <figure class="story-photo"><img src="assets/Kelly_ChaCha_Work_KVV.png" alt="Kelly working in Sarasota"></figure>
-    </div>
-  </div>
-</section>
-
+<div class="shell editorial-shell">
+<nav class="editorial-nav"><a href="#top" class="kvv-mark" aria-label="Kelly Van Vleet home"><svg viewBox="0 0 130 100" role="img" aria-label="KVV handwritten logo"><g fill="none" stroke="#171714" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round"><path d="M28 14L20 83M29 49L56 17M28 49L58 86M16 84L42 69"/><path d="M59 16L64 83L86 15M69 79L90 65"/><path d="M90 17L99 82L119 16"/><path d="M10 91Q55 97 113 87" stroke-width="1.8"/></g></svg></a><div class="editorial-links"><a href="#story">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#taste">Resources</a><a class="editorial-resume" href="Kelly_Van_Vleet_Resume_KVV.docx">Resume →</a><a class="editorial-linkedin" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/" aria-label="LinkedIn">in</a></div></nav>
+<header class="editorial-hero" id="top"><div class="editorial-copy"><h1>Kelly<em>Van Vleet.</em></h1><p>I’m at my best when something is growing, evolving, or needs to work better.</p><div class="editorial-actions"><a class="ed-button ed-dark" href="Kelly_Van_Vleet_Resume_KVV.docx">View resume →</a><a class="ed-button" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/">LinkedIn ▣</a></div></div><div class="editorial-collage"><div class="editorial-sun"></div><img class="editorial-portrait" src="assets/kelly-industrial.png" alt="Kelly Van Vleet seated at industrial brick steps"><div class="editorial-tape"></div><svg class="editorial-scribble" viewBox="0 0 110 145" aria-hidden="true"><g transform="rotate(-5 50 70)"><text x="7" y="24">PRODUCT</text><text x="12" y="43">PEOPLE</text><text x="7" y="62">PROCESS</text><text x="8" y="81">PROGRESS</text><path d="M25 92Q47 95 76 88" stroke="#171714" stroke-width="2" fill="none"/></g></svg><svg class="editorial-plant" viewBox="0 0 110 160" aria-hidden="true"><path d="M33 155Q65 106 56 12M48 127Q25 106 17 75M54 91Q82 75 94 43M56 58Q30 42 19 20M59 116Q79 105 100 94" stroke="#64714e" stroke-width="3" fill="none"/><path d="M17 75Q-4 47 19 47Q42 54 17 75M94 43Q72 25 104 18Q112 34 94 43M19 20Q11 -6 35 9Q42 23 19 20M100 94Q84 75 109 71Q114 86 100 94M56 12Q38 -7 62 1Q72 14 56 12" fill="#68774d"/></svg><div class="editorial-postcard" aria-hidden="true"></div></div></header>
+<section class="editorial-story" id="story"><div class="editorial-story-heading"><div class="editorial-story-number">01<small>MY STORY</small></div><h2>I care about the whole experience.</h2><div class="editorial-side">PRODUCT<br>TEAMS<br>OPERATIONS<br>REAL IMPACT</div></div><div class="editorial-three"><article class="editorial-feature"><svg viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M24 43V21M24 31Q10 32 8 12Q24 12 24 31M24 24Q25 7 43 6Q42 23 24 24"/></svg><h3>Builder</h3><p>I like taking ideas, figuring out what’s needed, and bringing the right people together to make it real.</p></article><article class="editorial-feature"><svg viewBox="0 0 50 50" fill="currentColor"><circle cx="25" cy="10" r="7"/><circle cx="8" cy="20" r="6"/><circle cx="42" cy="20" r="6"/><path d="M13 43v-7q0-12 12-12t12 12v7zM0 40v-9q0-8 10-8t10 8v9zM30 40v-9q0-8 10-8t10 8v9z"/></svg><h3>People</h3><p>I care about the teams, the process, and the day-to-day work that keeps things moving.</p></article><article class="editorial-feature"><svg viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="27" r="17"/><circle cx="24" cy="27" r="10"/><circle cx="24" cy="27" r="3" fill="currentColor"/><path d="M24 27L44 6M38 5L43 7L45 13" stroke-width="3"/></svg><h3>Impact</h3><p>I get energy from solving problems, creating structure, and helping things grow.</p></article></div></section></div>
 <section id="experience" class="experience">
   <div class="shell">
     <div class="section-head"><div class="kicker"><span>02</span>Experience</div><h2>Building products that have to work in the real world.</h2></div>
@@ -288,6 +305,6 @@ footer{padding:26px 0 30px;background:var(--olive);color:#fff}
     <div class="footer-links"><a href="Kelly_Van_Vleet_Resume_KVV.docx">Resume</a><br><a href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/">LinkedIn</a></div>
   </div>
 </footer>
-<script>document.querySelector("nav .name")?.remove();</script>
+
 </body>
 </html>
