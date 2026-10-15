@@ -155,6 +155,15 @@ body{background:#f5efe3}
 .kvv-easter{font:14px/1.35 Georgia,serif;padding:13px 4px 3px}.kvv-easter em{color:#ba4a2b}
 @media(max-width:1050px){.kvv-frame{padding:0 20px 20px}.kvv-nav{gap:14px}.kvv-nav-links{gap:15px}.kvv-nav-links a{font-size:10px}.kvv-nav-actions{gap:10px}.kvv-hero{height:360px}.kvv-intro h1{font-size:clamp(59px,8vw,82px)}.kvv-hero-art{max-height:350px}.kvv-hero-art img{max-height:350px}.kvv-how{grid-template-columns:85px 1fr;gap:15px}.kvv-how-stages{grid-column:2}.kvv-sayings{margin:0 -20px;padding:14px 20px}.kvv-saying{font-size:20px}}
 @media(max-width:650px){.kvv-frame{padding:0 13px 18px}.kvv-nav{height:auto;min-height:65px;gap:9px}.kvv-signature{height:51px;width:78px;min-width:78px}.kvv-signature img{width:76px;height:50px}.kvv-nav-links{gap:11px}.kvv-nav-links a{font-size:9px}.kvv-nav-actions{width:100%;justify-content:flex-end;gap:12px}.kvv-hero{height:auto;grid-template-columns:1fr;padding:26px 0 15px}.kvv-intro h1{font-size:clamp(63px,13.5vw,88px)}.kvv-intro p{font-size:18px}.kvv-hero-art{width:100%;max-height:none;margin-top:12px}.kvv-hero-art img{max-height:none}.kvv-story-heading{grid-template-columns:65px 1fr;gap:12px}.kvv-story-heading h2{font-size:clamp(28px,7vw,39px)}.kvv-chapter{font-size:37px;padding-right:8px}.kvv-chapter small{font-size:8px}.kvv-sidewords{display:none}.kvv-three{grid-template-columns:1fr;gap:15px}.kvv-three article{padding:0 0 12px!important;border-right:none;border-bottom:1px solid #ddd1bd}.kvv-how{grid-template-columns:1fr;gap:15px}.kvv-how-label .kvv-chapter{border-right:0}.kvv-how-stages{grid-column:1;grid-template-columns:repeat(2,1fr);gap:15px}.kvv-sayings{grid-template-columns:repeat(2,1fr);margin:0 -13px;padding:12px 13px}.kvv-saying{font-size:17px;min-height:75px;padding:12px}.kvv-easter{font-size:13px}}
+
+/* Remove duplicate hero actions; preserve only the nav Resume and LinkedIn links. */
+.kvv-hero{height:355px!important}
+.kvv-intro{align-self:center}
+.kvv-intro p{margin-bottom:0!important}
+.kvv-hero-art{max-height:340px!important}
+.kvv-hero-art img{max-height:340px!important}
+@media(max-width:1050px){.kvv-hero{height:330px!important}.kvv-hero-art,.kvv-hero-art img{max-height:315px!important}}
+@media(max-width:650px){.kvv-hero{height:auto!important;padding:20px 0 13px}.kvv-hero-art,.kvv-hero-art img{max-height:none!important}}
 </style></head><body>
 <div class="kvv-frame" id="top">
 <nav class="kvv-nav" aria-label="Main navigation">
@@ -162,7 +171,7 @@ body{background:#f5efe3}
   <div class="kvv-nav-links"><a href="#story">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#taste">Resources</a></div><div class="kvv-nav-actions"><a class="kvv-top-resume" href="resume.html">Resume →</a><a class="kvv-top-linked" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/" aria-label="LinkedIn">in</a></div>
   </nav>
 <header class="kvv-hero">
-  <div class="kvv-intro"><h1>Kelly<em>Van Vleet.</em></h1><p>I’m at my best when something is growing,<br class="kvv-desktop-only"> evolving, or needs to work better.</p><div class="kvv-buttons"><a class="kvv-button kvv-button-dark" href="resume.html">View resume →</a><a class="kvv-button" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/">LinkedIn <span class="kvv-mini-in">in</span></a></div></div>
+  <div class="kvv-intro"><h1>Kelly<em>Van Vleet.</em></h1><p>I’m at my best when something is growing,<br class="kvv-desktop-only"> evolving, or needs to work better.</p></div>
   <div class="kvv-hero-art"><img src="assets/Kelly_Approved_Collage_KVV.svg?v=4" alt="Kelly seated on industrial steps with vintage Sarasota-inspired collage artwork"></div>
 </header>
 <section class="kvv-story" id="story" aria-labelledby="kvv-story-title">
