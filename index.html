@@ -164,11 +164,43 @@ body{background:#f5efe3}
 .kvv-hero-art img{max-height:340px!important}
 @media(max-width:1050px){.kvv-hero{height:330px!important}.kvv-hero-art,.kvv-hero-art img{max-height:315px!important}}
 @media(max-width:650px){.kvv-hero{height:auto!important;padding:20px 0 13px}.kvv-hero-art,.kvv-hero-art img{max-height:none!important}}
+
+/* Mobile-first responsive navigation and content protection */
+.kvv-mobile-toggle{display:none}
+@media(max-width:650px){
+ html,body{max-width:100%;overflow-x:clip}
+ .kvv-frame{width:calc(100% - 16px)!important;max-width:100%;padding:0 12px 17px!important;overflow:hidden}
+ .kvv-nav{display:grid!important;grid-template-columns:78px minmax(0,1fr) auto!important;align-items:center!important;gap:8px!important;min-height:65px!important;height:auto!important;padding:7px 0!important;position:relative}
+ .kvv-signature{grid-column:1;grid-row:1;width:74px!important;min-width:74px!important;height:51px!important;z-index:1}
+ .kvv-signature img{width:72px!important;height:49px!important}
+ .kvv-mobile-toggle{display:flex;grid-column:2;grid-row:1;justify-self:end;align-items:center;justify-content:center;border:1px solid #171714;background:transparent;color:#171714;padding:10px;font:bold 10px Arial,sans-serif;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
+ .kvv-nav-actions{grid-column:3;grid-row:1;width:auto!important;margin:0!important;display:flex!important;align-items:center!important;gap:8px!important;justify-content:flex-end!important}
+ .kvv-nav .kvv-top-resume{min-width:0!important;min-height:36px!important;padding:9px 11px!important;font-size:10px!important;letter-spacing:.08em!important}
+ .kvv-top-linked{font-size:17px!important;border-width:1px!important}
+ .kvv-nav-links{display:none!important;grid-column:1/-1;grid-row:2;width:100%!important;min-width:0;flex-direction:column!important;align-items:stretch!important;gap:0!important;padding:6px 0 3px!important;border-top:1px solid #c9beac}
+ .kvv-nav-links.is-open{display:flex!important}
+ .kvv-nav-links a{display:block!important;padding:12px 7px!important;font-size:12px!important;border-bottom:1px solid #ded5c7}
+ .kvv-nav-links a[href="#taste"]{display:block!important}
+ .kvv-hero,.kvv-story,.kvv-numbered-section,.kvv-how,.kvv-sayings{min-width:0;max-width:100%}
+ .kvv-intro,.kvv-intro h1,.kvv-story-heading h2,.kvv-section-heading h2{min-width:0;max-width:100%;overflow-wrap:normal}
+ .kvv-intro h1{font-size:clamp(49px,12.9vw,86px)!important;white-space:normal!important}
+ .kvv-intro p{font-size:clamp(16px,4.4vw,20px)!important}
+ .kvv-story-heading{grid-template-columns:65px minmax(0,1fr)!important}
+ .kvv-story-heading h2{white-space:normal!important;overflow-wrap:break-word}
+ .kvv-three article p,.kvv-how-stages article p,.chapter p{overflow-wrap:break-word}
+}
+@media(max-width:375px){
+ .kvv-nav{grid-template-columns:67px minmax(0,1fr) auto!important;gap:5px!important}
+ .kvv-signature{width:64px!important;min-width:64px!important}.kvv-signature img{width:63px!important}
+ .kvv-nav .kvv-top-resume{padding:8px!important;font-size:9px!important}
+ .kvv-mobile-toggle{padding:9px 7px!important}
+ .kvv-nav-actions{gap:5px!important}
+}
 </style></head><body>
 <div class="kvv-frame" id="top">
 <nav class="kvv-nav" aria-label="Main navigation">
   <a class="kvv-signature" href="#top" aria-label="Kelly Van Vleet home"><img src="assets/Kelly_KVV_Signature_KVV.svg?v=4" alt="KVV handwritten signature"></a>
-  <div class="kvv-nav-links"><a href="#story">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#taste">Resources</a></div><div class="kvv-nav-actions"><a class="kvv-top-resume" href="resume.html">Resume →</a><a class="kvv-top-linked" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/" aria-label="LinkedIn">in</a></div>
+  <button class="kvv-mobile-toggle" type="button" aria-expanded="false" aria-controls="kvv-nav-menu">Menu</button><div id="kvv-nav-menu" class="kvv-nav-links"><a href="#story">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#taste">Resources</a></div><div class="kvv-nav-actions"><a class="kvv-top-resume" href="resume.html">Resume →</a><a class="kvv-top-linked" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/" aria-label="LinkedIn">in</a></div>
   </nav>
 <header class="kvv-hero">
   <div class="kvv-intro"><h1>Kelly<em>Van Vleet.</em></h1><p>I’m at my best when something is growing,<br class="kvv-desktop-only"> evolving, or needs to work better.</p></div>
@@ -186,4 +218,4 @@ body{background:#f5efe3}
 <div class="kvv-how-label"><div class="kvv-chapter">02<small>HOW I WORK</small></div></div>
 <div class="kvv-how-copy"><h2>Understand the problem.<br>Find the right solution.</h2><p>I take a thoughtful, structured approach to turn complexity into progress. It’s not just about solving a problem — it’s about building something that works for people and lasts.</p></div>
 <div class="kvv-how-stages"><article><b>01</b><h3>Learn</h3><p>Get curious. Understand the people, the context, and the real problem.</p></article><article><b>02</b><h3>Map</h3><p>Connect the dots. Find patterns and opportunities.</p></article><article><b>03</b><h3>Prioritize</h3><p>Focus on what matters most. Be clear on the why.</p></article><article><b>04</b><h3>Make it work</h3><p>Turn ideas into action. Build, iterate, and keep it moving.</p></article></div></section><section class="kvv-sayings" aria-label="Favorite sayings"><div class="kvv-saying cream">Back to basics.</div><div class="kvv-saying rust">Knowledge is power.</div><div class="kvv-saying olive">Human first.</div><div class="kvv-saying yellow">Tough as nails.</div><div class="kvv-saying white">The early bird gets the worm.</div><div class="kvv-saying dark">Plan your work. Work your plan.</div></section><div class="kvv-easter">Just a small-town girl in a lonely tech world. <em>Still causing trouble.</em></div><section class="section kvv-numbered-section" id="experience"><div class="kvv-section-heading"><div class="kvv-chapter">03<small>EXPERIENCE</small></div><h2>Building products that have to work in the real world.</h2></div><div class="chapters"><div class="chapter"><b>Physical products + business foundation</b><div><h3>Toyota · Mrs. T’s Pierogies · Tropicana / Pepsi · Heinz · Berlin Packaging</h3><p>Manufacturing, logistics, purchasing, commodities, supply chain, packaging, innovation and facilities. This is where I learned how physical products are built, moved, costed and delivered, and how decisions across the business shape the customer experience.</p></div></div><div class="chapter"><b>SaaS + Digital Health · Product · Operations · NPI</b><div><h3>Voalte · Hillrom / Baxter</h3><p>This is where I learned how to build and scale a SaaS and digital health business. I was promoted through implementation, operations leadership, program management and product, managing teams, hardware operations and complex multi-site deployments, then moving into new product introduction and customer launches across clinical communication, connected devices, integrations and FDA-regulated healthcare technology.</p></div></div><div class="chapter"><b>Product · NPI · Operations</b><div><h3>DrFirst · RxInform / Timely</h3><p>New product introduction, product development, operations, product operations, go-to-market, launch and release management. Helped build and operationalize a growing patient-engagement product, connecting development, implementation, partner and customer-facing teams across prescribing, pharmacy, PBM and pharmaceutical customers.</p></div></div></div></section>
-<section class="section kvv-numbered-section" id="taste"><div class="kvv-section-heading"><div class="kvv-chapter">04<small>WHAT I BRING</small></div><h2>Taste matters.</h2></div><p class="copy" style="margin-top:18px">Tools can generate. Process can organize. Judgment is what turns an idea into something people actually want to use, buy, trust or be part of.</p></section><footer><span>Kelly Van Vleet · Sarasota, Florida</span><span class="muted">Product • People • Operations</span></footer></div></body></html>
+<section class="section kvv-numbered-section" id="taste"><div class="kvv-section-heading"><div class="kvv-chapter">04<small>WHAT I BRING</small></div><h2>Taste matters.</h2></div><p class="copy" style="margin-top:18px">Tools can generate. Process can organize. Judgment is what turns an idea into something people actually want to use, buy, trust or be part of.</p></section><footer><span>Kelly Van Vleet · Sarasota, Florida</span><span class="muted">Product • People • Operations</span></footer></div><script>const mb=document.querySelector(".kvv-mobile-toggle");const nm=document.querySelector(".kvv-nav-links");mb?.addEventListener("click",()=>{let open=nm.classList.toggle("is-open");mb.setAttribute("aria-expanded",String(open));mb.textContent=open?"Close":"Menu"});nm?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nm.classList.remove("is-open");mb?.setAttribute("aria-expanded","false");if(mb)mb.textContent="Menu"}));</script></body></html>
