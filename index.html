@@ -54,13 +54,66 @@ body{background:#f5efe3}
 @media(max-width:900px){.kvv-frame{width:calc(100% - 28px);padding:0 18px 22px;margin-top:14px}.kvv-nav{height:auto;min-height:74px;gap:10px}.kvv-signature{width:82px;min-width:82px;height:66px}.kvv-signature img{width:81px;height:71px}.kvv-nav-links{gap:16px}.kvv-nav-actions{gap:14px}.kvv-nav-links a{font-size:10px}.kvv-nav .kvv-top-resume{min-width:113px;min-height:39px;padding:10px;font-size:11px}.kvv-hero{height:410px}.kvv-intro{padding-left:3px}.kvv-intro h1{font-size:clamp(66px,10vw,100px);margin-bottom:20px}.kvv-intro p{font-size:clamp(17px,2.4vw,22px);margin-bottom:17px}.kvv-button{min-width:133px;padding:11px 14px;font-size:11px;gap:10px;min-height:41px}.kvv-hero-art{left:0;width:107%}.kvv-story-heading{grid-template-columns:90px 1fr 90px;gap:15px}.kvv-chapter{font-size:42px;padding-right:12px}.kvv-chapter small{font-size:9px}.kvv-story-heading h2{font-size:clamp(26px,4.2vw,38px)}.kvv-sidewords{font-size:9px;padding-left:13px}.kvv-three{margin-top:26px}.kvv-three article{grid-template-columns:35px 1fr;gap:7px;padding:0 12px}.kvv-three svg{width:31px;height:31px}.kvv-three h3{font-size:12px}.kvv-three p{font-size:12px}}
 @media(max-width:650px){.kvv-frame{width:calc(100% - 16px);padding:0 12px 19px;margin:8px auto 0}.kvv-nav{min-height:64px;flex-wrap:wrap;gap:10px;padding:7px 0}.kvv-signature{width:74px;min-width:74px;height:48px}.kvv-signature img{width:74px;height:55px}.kvv-nav-links{gap:13px;flex:1;justify-content:flex-end}.kvv-nav-links a{font-size:9px}.kvv-nav-links a[href='#taste']{display:none}.kvv-nav-actions{width:100%;justify-content:flex-end;gap:15px}.kvv-nav .kvv-top-resume{min-height:32px}.kvv-top-linked{font-size:18px}.kvv-hero{height:auto;grid-template-columns:1fr;padding:25px 0 12px}.kvv-intro{padding:0 0 3px 4px}.kvv-intro h1{font-size:clamp(66px,14vw,91px);margin-bottom:20px}.kvv-intro p{font-size:19px;margin-bottom:18px}.kvv-desktop-only{display:none}.kvv-button{min-width:0;font-size:10px}.kvv-hero-art{width:107%;left:-2%;margin:14px 0 0}.kvv-story{padding:20px 2px 0!important}.kvv-story-heading{grid-template-columns:57px 1fr;gap:12px}.kvv-chapter{font-size:38px}.kvv-chapter small{font-size:8px;margin:7px 0 0}.kvv-story-heading h2{font-size:clamp(28px,6.5vw,42px);white-space:normal}.kvv-sidewords{display:none}.kvv-three{grid-template-columns:1fr;gap:15px;margin-top:20px}.kvv-three article{grid-template-columns:43px 1fr;gap:10px;padding:0 0 16px!important;border-right:0;border-bottom:1px solid #d5cbbb}.kvv-three article:last-child{border-bottom:0;padding-bottom:0!important}.kvv-three svg{width:36px;height:36px}.kvv-three h3{margin:4px 0 8px}.kvv-three p{font-size:15px}}
 @media(max-width:385px){.kvv-nav-links a[href='#work']{display:none}.kvv-intro h1{font-size:65px}}
-.kvv-story-heading h2,.story-head h2{font-size:clamp(27px,3.0vw,40px)!important;line-height:1.1!important;letter-spacing:-.035em!important}@media(max-width:640px){.kvv-story-heading h2,.story-head h2{font-size:clamp(27px,6.5vw,35px)!important}}</style></head><body>
+.kvv-story-heading h2,.story-head h2{font-size:clamp(27px,3.0vw,40px)!important;line-height:1.1!important;letter-spacing:-.035em!important}@media(max-width:640px){.kvv-story-heading h2,.story-head h2{font-size:clamp(27px,6.5vw,35px)!important}}
+/* unified section hierarchy and mobile-first layout, Oct 2026 */
+.kvv-frame{max-width:1460px}
+.kvv-nav{justify-content:flex-start}
+.kvv-signature{border-right:0!important;width:145px;min-width:145px}
+.kvv-signature img{width:140px;height:96px;object-fit:contain}
+.kvv-nav-links{margin-left:15px;justify-content:flex-start}
+.kvv-numbered-section{padding:31px 12px 35px;border-bottom:1px solid #c9c1b2}
+.kvv-section-heading{display:grid;grid-template-columns:165px minmax(0,1fr);align-items:center;gap:28px;margin-bottom:25px}
+.kvv-section-heading .kvv-chapter{min-height:66px}
+.kvv-section-heading h2{font:400 clamp(27px,3vw,40px)/1.12 Georgia,'Times New Roman',serif;letter-spacing:-.035em;margin:0}
+.kvv-numbered-section .chapters{margin-top:20px}
+.kvv-numbered-section .chapter{grid-template-columns:minmax(155px,25%) minmax(0,1fr);gap:22px}
+.kvv-numbered-section .chapter h3{font-size:clamp(20px,2.3vw,27px);line-height:1.15;overflow-wrap:break-word}
+.kvv-numbered-section .chapter p,.kvv-numbered-section .copy{font-size:14px;line-height:1.55}
+.kvv-numbered-section .steps{gap:14px;margin-top:23px}
+.kvv-numbered-section .steps b{font-size:18px}
+.kvv-frame footer{padding:23px 12px 27px}
+@media(max-width:900px){
+.kvv-signature{width:109px;min-width:109px}
+.kvv-signature img{width:106px;height:76px}
+.kvv-nav-links{margin-left:4px;gap:19px}
+.kvv-section-heading{grid-template-columns:90px 1fr;gap:15px}
+.kvv-numbered-section{padding:26px 4px}
+.kvv-numbered-section .chapter{grid-template-columns:minmax(120px,29%) 1fr}
+.kvv-numbered-section .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+.kvv-frame{overflow:hidden}
+.kvv-nav{display:flex;flex-wrap:nowrap;align-items:center;min-height:68px;padding:8px 0;gap:6px}
+.kvv-signature{width:88px;min-width:88px;height:56px}
+.kvv-signature img{width:87px;height:65px}
+.kvv-nav-links{display:flex;justify-content:flex-end;gap:12px;margin-left:auto;width:auto;flex:1;min-width:0}
+.kvv-nav-links a{font-size:9px;letter-spacing:.09em}
+.kvv-nav-links a[href="#taste"]{display:none}
+.kvv-hero{padding-top:10px}
+.kvv-intro h1{font-size:clamp(60px,14vw,87px)}
+.kvv-hero-art{margin-top:7px}
+.kvv-story{padding-top:16px!important}
+.kvv-numbered-section{padding:21px 2px 26px}
+.kvv-section-heading{grid-template-columns:57px minmax(0,1fr);gap:12px;align-items:start;margin-bottom:19px}
+.kvv-section-heading .kvv-chapter{font-size:38px;min-height:0}
+.kvv-section-heading .kvv-chapter small{font-size:8px;line-height:1.3;white-space:normal;letter-spacing:.1em}
+.kvv-section-heading h2{font-size:clamp(25px,6.3vw,33px);line-height:1.13}
+.kvv-numbered-section .chapter{display:block;padding:14px 0}
+.kvv-numbered-section .chapter b{display:block;margin:0 0 6px;font-size:10px}
+.kvv-numbered-section .chapter h3{font-size:21px;line-height:1.18}
+.kvv-numbered-section .chapter p,.kvv-numbered-section .copy{font-size:14px;line-height:1.45}
+.kvv-numbered-section .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.kvv-numbered-section .steps b{font-size:16px}
+.kvv-numbered-section .steps p{font-size:12px}
+.kvv-frame footer{font-size:11px;flex-wrap:wrap;padding:20px 2px}
+}
+@media(max-width:385px){.kvv-nav-links a[href="#work"]{display:none}.kvv-signature{width:78px;min-width:78px}.kvv-signature img{width:76px}}
+</style></head><body>
 <div class="kvv-frame" id="top">
 <nav class="kvv-nav" aria-label="Main navigation">
   <a class="kvv-signature" href="#top" aria-label="Kelly Van Vleet home"><img src="assets/Kelly_KVV_Signature_KVV.svg" alt="KVV handwritten signature"></a>
   <div class="kvv-nav-links"><a href="#story">About</a><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#taste">Resources</a></div>
-  <div class="kvv-nav-actions"><a class="kvv-top-resume" href="resume.html">Resume →</a><a class="kvv-top-linked" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/" aria-label="LinkedIn">in</a></div>
-</nav>
+  </nav>
 <header class="kvv-hero">
   <div class="kvv-intro"><h1>Kelly<em>Van Vleet.</em></h1><p>I’m at my best when something is growing,<br class="kvv-desktop-only"> evolving, or needs to work better.</p><div class="kvv-buttons"><a class="kvv-button kvv-button-dark" href="resume.html">View resume →</a><a class="kvv-button" href="https://www.linkedin.com/in/kelly-van-vleet-91b82020/">LinkedIn <span class="kvv-mini-in">in</span></a></div></div>
   <div class="kvv-hero-art"><img src="assets/Kelly_Approved_Collage_KVV.svg" alt="Kelly seated on industrial steps with vintage Sarasota-inspired collage artwork"></div>
@@ -73,7 +126,6 @@ body{background:#f5efe3}
   <article><svg viewBox="0 0 50 50" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 46V28h9v18zM21 46V17h9v29zM33 46V4h9v42z"/></svg><div><h3>Impact</h3><p>I get energy from solving problems, creating structure, and helping things grow.</p></div></article>
   </div>
 </section>
-</div>
-<section class="section" id="experience"><div class="eyebrow">02 / Experience</div><h2>Building products that have to work in the real world.</h2><div class="chapters"><div class="chapter"><b>Physical products + business foundation</b><div><h3>Toyota · Mrs. T’s Pierogies · Tropicana / Pepsi · Heinz · Berlin Packaging</h3><p>Manufacturing, logistics, purchasing, commodities, supply chain, packaging, innovation and facilities. This is where I learned how physical products are built, moved, costed and delivered, and how decisions across the business shape the customer experience.</p></div></div><div class="chapter"><b>SaaS + Digital Health · Product · Operations · NPI</b><div><h3>Voalte · Hillrom / Baxter</h3><p>This is where I learned how to build and scale a SaaS and digital health business. I was promoted through implementation, operations leadership, program management and product, managing teams, hardware operations and complex multi-site deployments, then moving into new product introduction and customer launches across clinical communication, connected devices, integrations and FDA-regulated healthcare technology.</p></div></div><div class="chapter"><b>Product · NPI · Operations</b><div><h3>DrFirst · RxInform / Timely</h3><p>New product introduction, product development, operations, product operations, go-to-market, launch and release management. Helped build and operationalize a growing patient-engagement product, connecting development, implementation, partner and customer-facing teams across prescribing, pharmacy, PBM and pharmaceutical customers.</p></div></div></div></section>
-<section class="section" id="work"><div class="eyebrow">03 / How I work</div><h2>Understand the problem. Find the right solution.</h2><p class="copy" style="margin-top:18px">I don’t believe AI or automation is the answer to everything. I believe in understanding the problem first, then finding the best solution. Sometimes that’s technology. Sometimes it’s process, people, product or simply doing something differently.</p><div class="steps"><div><b>01 / Learn</b><p>Get close enough to understand what is really happening.</p></div><div><b>02 / Map</b><p>See the system, handoffs, gaps and dependencies.</p></div><div><b>03 / Prioritize</b><p>Separate the important work from the noise.</p></div><div><b>04 / Make it work</b><p>Build, launch, enable, support and improve what matters.</p></div></div></section>
-<section class="section" id="taste"><div class="eyebrow">04 / What I bring</div><h2>Taste matters.</h2><p class="copy" style="margin-top:18px">Tools can generate. Process can organize. Judgment is what turns an idea into something people actually want to use, buy, trust or be part of.</p></section><footer><span>Kelly Van Vleet · Sarasota, Florida</span><span class="muted">Product • People • Operations</span></footer></div></body></html>
+<section class="section kvv-numbered-section" id="experience"><div class="kvv-section-heading"><div class="kvv-chapter">02<small>EXPERIENCE</small></div><h2>Building products that have to work in the real world.</h2></div><div class="chapters"><div class="chapter"><b>Physical products + business foundation</b><div><h3>Toyota · Mrs. T’s Pierogies · Tropicana / Pepsi · Heinz · Berlin Packaging</h3><p>Manufacturing, logistics, purchasing, commodities, supply chain, packaging, innovation and facilities. This is where I learned how physical products are built, moved, costed and delivered, and how decisions across the business shape the customer experience.</p></div></div><div class="chapter"><b>SaaS + Digital Health · Product · Operations · NPI</b><div><h3>Voalte · Hillrom / Baxter</h3><p>This is where I learned how to build and scale a SaaS and digital health business. I was promoted through implementation, operations leadership, program management and product, managing teams, hardware operations and complex multi-site deployments, then moving into new product introduction and customer launches across clinical communication, connected devices, integrations and FDA-regulated healthcare technology.</p></div></div><div class="chapter"><b>Product · NPI · Operations</b><div><h3>DrFirst · RxInform / Timely</h3><p>New product introduction, product development, operations, product operations, go-to-market, launch and release management. Helped build and operationalize a growing patient-engagement product, connecting development, implementation, partner and customer-facing teams across prescribing, pharmacy, PBM and pharmaceutical customers.</p></div></div></div></section>
+<section class="section kvv-numbered-section" id="work"><div class="kvv-section-heading"><div class="kvv-chapter">03<small>HOW I WORK</small></div><h2>Understand the problem. Find the right solution.</h2></div><p class="copy" style="margin-top:18px">I don’t believe AI or automation is the answer to everything. I believe in understanding the problem first, then finding the best solution. Sometimes that’s technology. Sometimes it’s process, people, product or simply doing something differently.</p><div class="steps"><div><b>01 / Learn</b><p>Get close enough to understand what is really happening.</p></div><div><b>02 / Map</b><p>See the system, handoffs, gaps and dependencies.</p></div><div><b>03 / Prioritize</b><p>Separate the important work from the noise.</p></div><div><b>04 / Make it work</b><p>Build, launch, enable, support and improve what matters.</p></div></div></section>
+<section class="section kvv-numbered-section" id="taste"><div class="kvv-section-heading"><div class="kvv-chapter">04<small>WHAT I BRING</small></div><h2>Taste matters.</h2></div><p class="copy" style="margin-top:18px">Tools can generate. Process can organize. Judgment is what turns an idea into something people actually want to use, buy, trust or be part of.</p></section><footer><span>Kelly Van Vleet · Sarasota, Florida</span><span class="muted">Product • People • Operations</span></footer></div></body></html>
