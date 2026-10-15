@@ -196,6 +196,68 @@ body{background:#f5efe3}
  .kvv-mobile-toggle{padding:9px 7px!important}
  .kvv-nav-actions{gap:5px!important}
 }
+
+/* Responsive layout audit: desktop, tablet, phone */
+.kvv-frame{min-width:0}
+.kvv-frame img{max-width:100%}
+.kvv-nav-links,.kvv-nav-actions,.kvv-intro,.kvv-hero-art,.kvv-story-heading>*,.kvv-section-heading>*,.kvv-three article,.kvv-how>*,.kvv-how-stages article,.chapters .chapter>*{min-width:0}
+.kvv-section-heading{display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;align-items:start}
+.kvv-section-heading h2{min-width:0;max-width:100%;overflow-wrap:break-word;font-size:clamp(30px,3.3vw,46px);white-space:normal;line-height:1.08}
+.kvv-numbered-section .chapters{margin-top:23px}
+.kvv-numbered-section .chapter{grid-template-columns:minmax(140px,225px) minmax(0,1fr);gap:20px}
+.kvv-numbered-section .chapter h3{overflow-wrap:break-word}
+.kvv-how-stages article{min-width:0}
+.kvv-how-stages h3,.kvv-how-stages p,.kvv-saying{overflow-wrap:break-word}
+@media(min-width:651px) and (max-width:1050px){
+ .kvv-nav{height:78px;gap:15px}
+ .kvv-nav-links{gap:clamp(10px,1.5vw,18px)}
+ .kvv-nav-links a{font-size:clamp(9px,.95vw,11px);letter-spacing:.1em}
+ .kvv-signature{width:88px;min-width:88px}
+ .kvv-signature img{width:85px}
+ .kvv-nav .kvv-top-resume{min-width:105px;padding:10px 12px;font-size:10px}
+ .kvv-intro h1{font-size:clamp(54px,7.8vw,83px)}
+ .kvv-intro p{font-size:clamp(17px,2vw,23px)}
+ .kvv-story-heading{grid-template-columns:86px minmax(0,1fr) 85px;gap:13px}
+ .kvv-story-heading h2{white-space:normal;font-size:clamp(26px,3.5vw,39px)}
+ .kvv-sidewords{padding-left:12px;font-size:8px}
+ .kvv-three article{padding:0 12px;grid-template-columns:32px minmax(0,1fr)}
+ .kvv-three p{font-size:12px}
+ .kvv-section-heading{grid-template-columns:86px minmax(0,1fr)}
+}
+@media(max-width:650px){
+ .kvv-frame{width:calc(100% - 16px);padding-left:12px;padding-right:12px}
+ .kvv-nav{width:100%;grid-template-columns:70px minmax(0,1fr) auto;justify-content:normal}
+ .kvv-nav .kvv-top-resume{white-space:nowrap}
+ .kvv-hero{display:grid;grid-template-columns:minmax(0,1fr);height:auto;gap:0}
+ .kvv-intro{width:100%;padding:0}
+ .kvv-intro h1{font-size:clamp(47px,12vw,75px)!important;line-height:.88;letter-spacing:-.075em}
+ .kvv-intro h1 em{font-size:1em}
+ .kvv-desktop-only{display:none}
+ .kvv-hero-art{width:100%;left:0;margin:14px auto 0}
+ .kvv-hero-art img{width:100%;height:auto;max-height:none;object-fit:contain}
+ .kvv-story-heading{grid-template-columns:58px minmax(0,1fr)!important;gap:12px}
+ .kvv-story-heading h2{font-size:clamp(27px,6.6vw,40px)!important;white-space:normal}
+ .kvv-how{grid-template-columns:minmax(0,1fr)}
+ .kvv-how-stages{grid-template-columns:repeat(2,minmax(0,1fr));grid-column:1}
+ .kvv-how-stages article{padding:0 8px}
+ .kvv-section-heading{grid-template-columns:58px minmax(0,1fr);gap:12px}
+ .kvv-section-heading h2{font-size:clamp(27px,6.6vw,38px);line-height:1.08}
+ .kvv-numbered-section .chapter{grid-template-columns:minmax(0,1fr);gap:7px}
+ .kvv-numbered-section .chapter h3{font-size:clamp(19px,5vw,24px)}
+ .kvv-sayings{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .kvv-saying{font-size:clamp(15px,4.2vw,18px);line-height:1.25;min-width:0}
+ .kvv-easter{max-width:100%}
+}
+@media(max-width:360px){
+ .kvv-nav{grid-template-columns:59px minmax(0,1fr) auto!important;gap:4px!important}
+ .kvv-signature{width:58px!important;min-width:58px!important}
+ .kvv-signature img{width:57px!important}
+ .kvv-mobile-toggle{padding:8px 6px!important}
+ .kvv-top-linked{font-size:15px!important}
+ .kvv-nav .kvv-top-resume{font-size:9px!important;padding:8px 6px!important}
+ .kvv-intro h1{font-size:clamp(44px,11.8vw,54px)!important}
+ .kvv-sayings{grid-template-columns:minmax(0,1fr)}
+}
 </style></head><body>
 <div class="kvv-frame" id="top">
 <nav class="kvv-nav" aria-label="Main navigation">
